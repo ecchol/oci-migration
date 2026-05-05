@@ -167,7 +167,7 @@ Password: welcome1
         ![Personalize dashboard](../images/lab2_task_2_image_5_1.png "Personalize dashboard")
         ![Personalize dashboard](../images/lab2_task_2_image_5_2.png "Personalize dashboard")
 6. The highest employee expense account, is "Meals", which is rather odd. Let's explore it further by clicking on "Meals" from the legend in the chart.
-        ![Personalize dashboard](../images/fg4.png "Personalize dashboard")
+        ![Personalize dashboard](../images/lab2_task_2_image_6_1.png "Personalize dashboard")
 
 7. To investigate further why "Meals" seems unusally high, let's compare current period amount with previous period. Click on the "Period Name" breadcrumb to add previous period i.e., May-23
         ![Personalize dashboard](../images/lab2_task_2_image_7_1.png "Personalize dashboard")

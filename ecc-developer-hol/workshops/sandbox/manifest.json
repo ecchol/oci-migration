@@ -52,6 +52,10 @@
           "filename": "../../query/diagnoseandmonitor/diagnoseandmonitor.md"
         },
         {
+          "title": "Lab 9: Additional End-to-End Extensibility Scenario",
+          "filename": "../../query/endtoendextensibility/endtoendextensibility.md"
+        },
+        {
           "title": "Troubleshooting",
           "description": "Solution to EBS homepage not accessible",
           "filename": "../../query/troubleshooting/start-stop-ecc.md"

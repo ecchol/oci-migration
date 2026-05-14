@@ -98,7 +98,7 @@ Search for ID attributes, then click on "Hide"
 
 ![image-2026-4-30_17-0-5](../images/image-2026-4-30_17-0-5.png)
 
-### Task 1.3: Define Associations
+### Task 1.3: Define Association
 
 1. Define association with **Return Lines (ont-rlines)**:
    1. In the Metadata page, select **Return Lines (ont-rlines)** from the data set/view list.
@@ -110,10 +110,13 @@ Search for ID attributes, then click on "Hide"
 
    3. Click **Add** to create a new association between **Return Lines** and **Return Lines View**.
    4. Provide the details below:
+      - Source Attribute: Product
+      - Target Data Set: Return Lines View
+      - Target Attribute: Product
+   5. Click **Add** again and provide the details below:
       - Source Attribute: Customer Number
       - Target Data Set: Return Lines View
       - Target Attribute: Customer Number
-   5. Click **Add** again and repeat the same mapping details.
    6. Click **Save**.
 
 ![image-2026-4-30_17-13-19](../images/image-2026-4-30_17-13-19.png)
@@ -123,10 +126,13 @@ Search for ID attributes, then click on "Hide"
    2. Go to the **Association** tab.
    3. Click **Add** to create a new association between **Order Lines** and **Return Lines View**.
    4. Provide the details below:
+      - Source Attribute: Product
+      - Target Data Set: Return Lines View
+      - Target Attribute: Product
+   5. Click **Add** again and provide the details below:
       - Source Attribute: Customer Number
       - Target Data Set: Return Lines View
       - Target Attribute: Customer Number
-   5. Click **Add** again and repeat the same mapping details.
    6. Click **Save**.
 
 ![image-2026-4-30_17-18-23](../images/image-2026-4-30_17-18-23.png)
@@ -218,18 +224,19 @@ Search for ID attributes, then click on "Hide"
 
 12. Click on "Save"
 
-13. In addition to comparing Orders and Returns over time, add a Pivot view under the "Order Insights" tab to compare orders and returns by product and customer:
+13. In addition of comparing Orders and Returns over time, add a Pivot view under "Order Insights" tab to compare orders and returns by product and customer:
 
-- Add new component: **Aggregate Table** (Pivot view is an alternate visualization of the Aggregate Table component).
+- Add New Component - **Aggregate Table** (Pivot view is an alternate visualization of the Aggregate Table component).
 - Enable **Multi dataset** checkbox.
-- Add data sets:
+- Add Data Set:
   - Order Lines (dataset alias: Orders)
   - Return Lines View (dataset alias: Returns)
-- Add attributes:
+- Attributes:
+  - Select attributes, then click **Add Attribute**
   - Product
   - Product Description
   - Sales Channel
-- Add metrics:
+  - Select Metric, then click **Add Attribute**
   - Orders - Order Number (count distinct), custom label: Orders Count
   - Returns - Order Number (count distinct), custom label: Returns Count
 
@@ -280,21 +287,3 @@ Search for ID attributes, then click on "Hide"
 18. Click "Save"
 
 ![image-2026-5-4_17-11-46](../images/image-2026-5-4_17-11-46.png)
-
-You may now **proceed to the next lab**
-
-## Learn More
-* [Enterprise Command Center- User Guide](https://docs.oracle.com/cd/E26401_01/doc.122/e22956/T27641T671922.htm)
-* [Enterprise Command Center- Administration Guide](https://docs.oracle.com/cd/E26401_01/doc.122/f34732/toc.htm)
-* [Enterprise Command Center- Extending Guide](https://docs.oracle.com/cd/E26401_01/doc.122/f21671/T673609T673618.htm)
-* [Enterprise Command Center- Installation Guide](https://support.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=264801675930013&id=2495053.1&_afrWindowMode=0&_adf.ctrl-state=1c6rxqpyoj_102)
-* [Enterprise Command Center- Direct from Development videos](https://learn.oracle.com/ols/course/ebs-enterprise-command-centers-direct-from-development/50662/60350)
-* [Enterprise Command Center for E-Business Suite- Technical details and Implementation](https://mylearn.oracle.com/ou/component/-/117416)
-
-## Acknowledgements
-
-* **Author**- Muhannad Obeidat, VP
-
-* **Contributors**-  Muhannad Obeidat, Nashwa Ghazaly, Mikhail Ibraheem, Rahul Burnwal, Manikanta Kumar and Sriram Sumaithangi
-
-* **Last Updated By/Date**- Vijay Kumar May 2026
